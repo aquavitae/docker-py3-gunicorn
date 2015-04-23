@@ -5,5 +5,6 @@ RUN /usr/bin/yes | pip uninstall -q gunicorn
 
 # install python3 version of gunicorn
 RUN apt-get -yq update
-RUN apt-get -yq install python3-pip
+RUN apt-get -yq install python3-pip git
 RUN pip3 install gunicorn==19.1.1
+
