@@ -24,6 +24,9 @@ RUN apt-get -yq install \
   nodejs \
   npm
 
+RUN rm -f /usr/local/bin/node
+RUN ln -s /usr/bin/nodejs /usr/local/bin/node
+
 # Install bower
 RUN npm install -g bower
 
